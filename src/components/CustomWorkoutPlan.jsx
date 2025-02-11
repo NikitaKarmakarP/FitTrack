@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import "./CustomWorkoutPlan.css";
 
 function CustomWorkoutPlan() {
   return (
-    <div className="my-8">
-      <h2 className="text-2xl font-bold mb-4">Custom Workout Plan</h2>
+    <div className="custom-workout-plan">
+      <h2>Custom Workout Plan</h2>
       <p>Create and manage custom workout plans here.</p>
     </div>
   );
