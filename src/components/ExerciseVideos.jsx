@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import "./ExerciseVideos.css";
 
 function ExerciseVideos() {
   return (
-    <div className="my-8">
-      <h2 className="text-2xl font-bold mb-4">Exercise Video Tutorials</h2>
-      <p>Video content for exercise tutorials goes here.</p>
+    <div className="exercise-videos">
+      <h2>Exercise Video Tutorials</h2>
+      <video controls width="80%">
+        <source src="/videos/exercise-tutorial.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
