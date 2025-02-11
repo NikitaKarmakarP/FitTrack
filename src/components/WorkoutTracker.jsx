@@ -1,18 +1,22 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-import { workoutData } from '../data/workoutData';
+import React from "react";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import workoutData from "../data/workoutData";
+import "./WorkoutTracker.css";
 
 function WorkoutTracker() {
   return (
-    <div className="my-8">
-      <h2 className="text-2xl font-bold mb-4">Workout Tracker</h2>
-      <LineChart width={600} height={300} data={workoutData}>
-        <CartesianGrid stroke="#ccc" />
-        <XAxis dataKey="day" />
-        <YAxis />
-        <Tooltip />
-        <Line type="monotone" dataKey="caloriesBurned" stroke="#8884d8" />
-      </LineChart>
+    <div className="workout-tracker">
+      <h2>Workout Tracker</h2>
+      <ResponsiveContainer width="90%" height={300}>
+        <LineChart data={workoutData}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="day" />
+          <YAxis />
+          <Tooltip />
+          <Line type="monotone" dataKey="caloriesBurned" stroke="#82ca9d" />
+        </LineChart>
+      </ResponsiveContainer>
+      <img src="/images/tracker.png" alt="Workout Tracker" className="tracker-image" />
     </div>
   );
 }
