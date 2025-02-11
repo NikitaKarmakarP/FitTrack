@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./Achievements.css";
 
 function Achievements() {
   return (
-    <div className="my-8">
-      <h2 className="text-2xl font-bold mb-4">Motivational Achievements</h2>
-      <p>Earn badges and track your progress here!</p>
+    <div className="achievements">
+      <h2>Motivational Achievements</h2>
+      <img src="/images/achievements.jpg" alt="Achievements" className="achievements-image" />
+      <p>Earn badges and track your progress toward fitness goals!</p>
     </div>
   );
 }
