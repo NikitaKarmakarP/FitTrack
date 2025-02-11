@@ -1,18 +1,20 @@
 {
-  "name": "fittrack-dashboard",
+  "name": "fittrack",
   "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "recharts": "^2.1.10",
-    "react-scripts": "5.0.1",
-    "tailwindcss": "^3.0.0"
-  },
+  "description": "A personal fitness dashboard to track workouts, diet, and progress.",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  }
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "recharts": "^2.1.10",
+    "react-scripts": "4.0.3"
+  },
+  "author": "FitTrack Dev Team",
+  "license": "MIT"
 }
