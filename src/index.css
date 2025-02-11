@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f3f4f6;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+h2 {
+  color: #333;
+}
+
+.tracker-image,
+.meal-plan-image,
+.achievements-image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
